@@ -1,0 +1,29 @@
+{
+  "name": "inst377-final-project",
+  "version": "1.0.0",
+  "description": "INST377 Final Project",
+  "homepage": "https://github.com/cod3ric/inst377-final-project#readme",
+  "bugs": {
+    "url": "https://github.com/cod3ric/inst377-final-project/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cod3ric/inst377-final-project.git"
+  },
+  "license": "ISC",
+  "author": "Eric Sierra",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -e '*'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.105.4",
+    "axios": "^1.16.1",
+    "body-parser": "^2.2.2",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14"
+  }
+}

@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>INST377 - Final Project - Wardrobe Page</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="wardrobe.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Wardrobe Page</h1>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="wardrobe.html">Wardrobe</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <div id="form-div">
+
+            <h2>Add Clothing Item</h2>
+
+            <form id="clothingForm" onsubmit="createClothingItem(); return false;">
+
+                <label for="name">Clothing Name: </label>
+                <input type="text" id="name" required>
+
+                <label for="category">Category: </label>
+                <select id="category" required>
+                    <option value="">Select Category</option>
+                    <option value="Top">Top</option>
+                    <option value="Bottom">Bottom</option>
+                    <option value="Outerwear">Outerwear</option>
+                    <option value="Shoes">Shoes</option>
+                    <option value="Accessory">Accessory</option>
+                </select>
+
+                <label for="weatherType">Weather Type: </label>
+                <select id="weatherType" required>
+                    <option value="">Select Weather Type</option>
+                    <option value="hot">Hot</option>
+                    <option value="mild">Mild</option>
+                    <option value="cold">Cold</option>
+                    <option value="rain">Rain</option>
+                    <option value="sunny">Sunny</option>
+                    <option value="windy">Windy</option>
+                </select>
+
+                <br>
+
+                <label for="minTemp">Minimum Temperature: </label>
+                <input type="number" id="minTemp" required>
+
+                <label for="maxTemp">Maximum Temperature: </label>
+                <input type="number" id="maxTemp" required>
+
+                <br>
+
+                <label for="imageURL">Image URL(optional): </label>
+                <input type="text" id="imageURL">
+
+                <button type="submit">Add Clothing</button>
+
+            </form>
+        </div>
+        
+        <table id="clothes-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Weather Type</th>
+                    <th>Min Temp</th>
+                    <th>Max Temp</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+
+            <tbody id="clothesTableBody"></tbody>
+        </table>
+    </body>
+</html>
