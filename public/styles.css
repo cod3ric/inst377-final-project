@@ -5,9 +5,7 @@ body {
 
 header {
     background-color: darkslateblue;
-
     color: white;
-
     padding: 20px;
 }
 
@@ -30,18 +28,18 @@ nav li{
 
 nav li:hover{
     background-color:blue;
-}
-
-nav li a:hover{
-    color:white;
+    a{
+        color:white;
+    }
 }
 
 
 #weather-div {
     display:none;
     background-color: white;
-    width: 350px;
-    margin: 30px;
+    width: 50%;
+    margin-right: 20%;
+    margin-left:20%;
     padding: 20px;
     border-radius: 12px;
     text-align: center;
@@ -87,4 +85,13 @@ nav li a:hover{
 #form-div select {
     margin-bottom: 10px;
     margin-right: 10px;
+}
+
+#about-div {
+    background-color: white;
+    width: 70%;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: left;
 }
